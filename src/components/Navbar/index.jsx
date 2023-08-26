@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
     <div>
-      <p>Eventos</p>
+      <p>Mi boletera</p>
       <input placeholder='busca tu evento favorito' />
     </div>
   );
 };
 
-export default Navbar; 
+export default Navbar;  
