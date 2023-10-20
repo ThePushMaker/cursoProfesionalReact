@@ -7,7 +7,7 @@
 				"test": false,
 				"url": "https://www.ticketmaster.com.mx/yeah-yeah-yeahs-zapopan-01-10-2023/event/14005D058DAB60C9",
 				"locale": "en-us",
-				"images": [{
+				"images": [{ 
 						"ratio": "16_9",
 						"url": "https://s1.ticketm.net/dam/a/eb9/30451c63-78ea-42f9-a704-a2994870ceb9_TABLET_LANDSCAPE_LARGE_16_9.jpg",
 						"width": 2048,
