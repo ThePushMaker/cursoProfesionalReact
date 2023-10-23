@@ -4,7 +4,7 @@ import EventItem from "./components/EventItem";
 import eventjsJSON from '../../data/events.json';
 console.log(10);
 
-const Events = () => {
+const Events = ({ searchTerm }) => {
   const [data, setData] = useState(eventjsJSON); 
   console.log(data);
   const { _embedded: { events }} = data;
@@ -13,7 +13,14 @@ const Events = () => {
     console.log('evento clickeado:', id)
   }
   
-  const eventsComponent = events.map((eventItem) => ( 
+  const renderEvents = () => {
+    let eventsFiltered = events; 
+    
+    if(searchTerm.length > 0) {
+      eventsFiltered = eventsFiltered.filter((item) => item.name.toLocaleLowerCase().includes(searchTerm));
+    }
+    
+    return eventsFiltered.map((eventItem) => ( 
       <EventItem 
         key={`event-item-${eventItem.id}`} 
         name={eventItem.name}
@@ -23,10 +30,12 @@ const Events = () => {
         id={eventItem.id}
       />
   ));
+  }
+  
   return(
     <div>
-      Events
-      {eventsComponent}
+      Eventos
+      {renderEvents()}
     </div>
   );
 }
