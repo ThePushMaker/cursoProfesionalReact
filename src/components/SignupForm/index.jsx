@@ -8,8 +8,11 @@ const SignupForm = () => {
   const [phone, setPhone] = useState('');
   
   const handleClearClick = () => {
-    console.log('clear');
-    
+    setName('');
+    setAddress('');
+    setAge('');
+    setZipcode('');
+    setPhone('');
   };
   
   const handleSubmitForm = (evt) => {
