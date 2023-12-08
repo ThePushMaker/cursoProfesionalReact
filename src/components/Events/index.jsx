@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import EventItem from "./components/EventItem";
 import eventjsJSON from '../../data/events.json';
-console.log(10);
+
 
 const Events = ({ searchTerm }) => {
   const [data, setData] = useState(eventjsJSON); 

@@ -11,7 +11,7 @@ function App() {
     setSearchTerm(term);
   };
   
-  console.log(searchTerm, 10);
+  // console.log(searchTerm, 10);
   
   return (
     <>
