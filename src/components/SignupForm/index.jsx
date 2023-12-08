@@ -2,9 +2,7 @@ import { useForm } from "react-hook-form";
 
 const SignupForm = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  
-
-  
+    
   const handleClearClick = () => {
     reset();
   };
@@ -13,7 +11,6 @@ const SignupForm = () => {
     console.log(data);
   };
   
-  console.log(errors);
   
   return (
     <form onSubmit={handleSubmit(handleSubmitForm)} style={{display:"flex", flexDirection:"column"}}>

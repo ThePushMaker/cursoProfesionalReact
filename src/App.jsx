@@ -15,10 +15,10 @@ function App() {
   
   return (
     <>
-      {/* <Navbar onSearch={handleNavbarSearch} />  */}
-      {/* <Events searchTerm={searchTerm} /> */}
+      <Navbar onSearch={handleNavbarSearch} /> 
+      <Events searchTerm={searchTerm} />
       
-      <SignupForm />
+      {/* <SignupForm /> */}
     </>
   )
 }
