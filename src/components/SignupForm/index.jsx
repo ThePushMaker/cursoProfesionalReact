@@ -11,7 +11,6 @@ const SignupForm = () => {
     console.log(data);
   };
   
-  
   return (
     <form onSubmit={handleSubmit(handleSubmitForm)} style={{display:"flex", flexDirection:"column"}}>
       <label>
