@@ -14,7 +14,6 @@ const Navbar = ({ onSearch }) => {
     }
   };
   
-  
   return (
     <div>
       <p>Mi boletera</p>
