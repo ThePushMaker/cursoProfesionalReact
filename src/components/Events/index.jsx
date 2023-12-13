@@ -1,8 +1,11 @@
+import useEventsData from '../../hooks/useEventsData';
 import { useState } from 'react';
 
 import EventItem from "./components/EventItem";
 
-const Events = ({ searchTerm }) => {  
+const Events = ({ searchTerm }) => {
+  const { events } = useEventsData();
+
   const handleEventItemClick = (id) => {
     console.log('evento clickeado:', id)
   }
