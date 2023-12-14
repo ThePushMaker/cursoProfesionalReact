@@ -29,6 +29,7 @@ const Events = ({ searchTerm }) => {
   ));
   }
   
+  
   return(
     <div>
       Eventos
