@@ -42,4 +42,5 @@ const Events = ({ searchTerm }) => {
   );
 }
 
+
 export default Events;
