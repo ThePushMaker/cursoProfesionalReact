@@ -29,4 +29,5 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
 
 Navbar.displayName = 'Navbar';
 
+
 export default Navbar;  
