@@ -28,7 +28,7 @@ const Events = ({ searchTerm }) => {
   };
   
   if (error) {
-    return <div>Ha ocurrido un error</div>;
+    return <div>Ocurrió un error</div>;
   }
   if (isLoading) {
     return <div>Cargando resultados...</div>;
