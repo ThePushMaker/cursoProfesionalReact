@@ -40,7 +40,6 @@ const Events = ({ searchTerm }) => {
       {renderEvents()}
     </div>
   );
-}
-
+};
 
 export default Events;
